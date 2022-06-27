@@ -59,15 +59,3 @@ class PostLoginSerializer(serializers.Serializer):
     class Meta:
         model = User
         fields = ('username', 'password')
-
-    # def validate(self, data):
-    #     print('self', self.initial_data)
-    #     try:
-    #         self.initial_data['username']
-    #     except:
-    #         raise serializers.ValidationError("Нет обязательного поля: login")
-    #     try:
-    #         self.initial_data['password']
-    #     except:
-    #         raise serializers.ValidationError("Нет обязательного поля: password")
-    #     return data

@@ -38,11 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'django.contrib.sites',  # Setting for allauth
     'accounts',
     'api',
-    # 'allauth',
-    # 'allauth.account',
     'rest_framework',
     'corsheaders',
 ]
@@ -52,7 +49,7 @@ SITE_ID = 1
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',  # before CommonMiddleware!!!
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -80,20 +77,6 @@ TEMPLATES = [
         },
     },
 ]
-
-# # Setting for allauth
-# AUTHENTICATION_BACKENDS = [
-#     'django.contrib.auth.backends.ModelBackend',
-#     'allauth.account.auth_backends.AuthenticationBackend',
-# ]
-
-
-# # Setting for allauth
-# ACCOUNT_EMAIL_REQUIRED = False
-# ACCOUNT_UNIQUE_EMAIL = True
-# ACCOUNT_USERNAME_REQUIRED = True
-# ACCOUNT_AUTHENTICATION_METHOD = 'username'  # 'email'
-# ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 WSGI_APPLICATION = 'project_FRIEND.wsgi.application'
@@ -144,17 +127,6 @@ USE_I18N = True
 USE_TZ = True
 
 UNICODE_JSON = True
-
-# REST_FRAMEWORK = {
-#     #this bit makes the magic.
-#     'DEFAULT_RENDERER_CLASSES': (
-#          #UnicodeJSONRenderer has an ensure_ascii = False attribute,
-#          #thus it will not escape characters.
-#         'rest_framework.renderers.UnicodeJSONRenderer',
-#          #You only need to keep this one if you're using the browsable API
-#         'rest_framework.renderers.BrowsableAPIRenderer',
-#     )
-# }
 
 
 # Static files (CSS, JavaScript, Images)
