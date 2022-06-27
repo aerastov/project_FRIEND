@@ -13,3 +13,5 @@ pip install django-cors-headers
 
 В консоли переходим в директорию проекта и стартуем проект:
 python manage.py runserver
+
+API проекта будет доступно по адресу: http://127.0.0.1:8000/v1
