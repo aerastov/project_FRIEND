@@ -41,8 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.sites',  # Setting for allauth
     'accounts',
     'api',
-    'allauth',
-    'allauth.account',
+    # 'allauth',
+    # 'allauth.account',
     'rest_framework',
     'corsheaders',
 ]
@@ -81,19 +81,19 @@ TEMPLATES = [
     },
 ]
 
-# Setting for allauth
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend',
-]
+# # Setting for allauth
+# AUTHENTICATION_BACKENDS = [
+#     'django.contrib.auth.backends.ModelBackend',
+#     'allauth.account.auth_backends.AuthenticationBackend',
+# ]
 
 
-# Setting for allauth
-ACCOUNT_EMAIL_REQUIRED = False
-ACCOUNT_UNIQUE_EMAIL = True
-ACCOUNT_USERNAME_REQUIRED = False
-ACCOUNT_AUTHENTICATION_METHOD = 'username'  # 'email'
-ACCOUNT_EMAIL_VERIFICATION = 'none'
+# # Setting for allauth
+# ACCOUNT_EMAIL_REQUIRED = False
+# ACCOUNT_UNIQUE_EMAIL = True
+# ACCOUNT_USERNAME_REQUIRED = True
+# ACCOUNT_AUTHENTICATION_METHOD = 'username'  # 'email'
+# ACCOUNT_EMAIL_VERIFICATION = 'none'
 
 
 WSGI_APPLICATION = 'project_FRIEND.wsgi.application'
