@@ -2,6 +2,8 @@
 База использована SQLite
 Файл конфига БД DATABASE_config.py
 
+python: 3.9.7
+django: 4.0.3
 клонируем проект из репозитория в созданное виртуальное окружение (python + django)
 
 git clone https://github.com/aerastov/project_FRIEND.git
